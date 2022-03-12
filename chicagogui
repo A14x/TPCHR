@@ -1,0 +1,98 @@
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Label = Instance.new("TextLabel")
+local TPgunStore = Instance.new("TextButton")
+local TPdealer = Instance.new("TextButton")
+local TPbank = Instance.new("TextButton")
+local TPbloxinout = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Main.Position = UDim2.new(0.589235723, 0, 0.28407225, 0)
+Main.Size = UDim2.new(0, 387, 0, 436)
+Main.Active = true
+Main.Draggable = true
+
+Label.Name = "Label"
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.fromRGB(126, 123, 126)
+Label.Size = UDim2.new(0, 387, 0, 50)
+Label.Font = Enum.Font.GothamBold
+Label.Text = "Chicago Remastered TP GUI  | made by SwordWorthy"
+Label.TextColor3 = Color3.fromRGB(0, 0, 0)
+Label.TextSize = 14.000
+
+TPgunStore.Name = "TPgunStore"
+TPgunStore.Parent = Main
+TPgunStore.BackgroundColor3 = Color3.fromRGB(14, 255, 50)
+TPgunStore.BorderColor3 = Color3.fromRGB(53, 83, 104)
+TPgunStore.BorderSizePixel = 2
+TPgunStore.Position = UDim2.new(0.0197485797, 0, 0.137213469, 0)
+TPgunStore.Size = UDim2.new(0, 183, 0, 52)
+TPgunStore.Style = Enum.ButtonStyle.RobloxRoundButton
+TPgunStore.Font = Enum.Font.SourceSans
+TPgunStore.Text = "TP GUN STORE (SAFEZONE)"
+TPgunStore.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPgunStore.TextSize = 18.000
+TPgunStore.MouseButton1Down:connect(function()
+	local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+	hrp.CFrame = CFrame.new(107.9, 4.1, 55.9)
+end)
+
+TPdealer.Name = "TPdealer"
+TPdealer.Parent = Main
+TPdealer.BackgroundColor3 = Color3.fromRGB(14, 255, 50)
+TPdealer.BorderColor3 = Color3.fromRGB(53, 83, 104)
+TPdealer.BorderSizePixel = 2
+TPdealer.Position = UDim2.new(0.510704637, 0, 0.137213469, 0)
+TPdealer.Size = UDim2.new(0, 183, 0, 52)
+TPdealer.Style = Enum.ButtonStyle.RobloxRoundButton
+TPdealer.Font = Enum.Font.SourceSans
+TPdealer.Text = "TP DEALER (BAG, C4)"
+TPdealer.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPdealer.TextSize = 18.000
+TPdealer.MouseButton1Down:connect(function()
+	local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+	hrp.CFrame = CFrame.new(-0.7, -8.5, -23.6)
+end)
+
+TPbank.Name = "TPbank"
+TPbank.Parent = Main
+TPbank.BackgroundColor3 = Color3.fromRGB(14, 255, 50)
+TPbank.BorderColor3 = Color3.fromRGB(53, 83, 104)
+TPbank.BorderSizePixel = 2
+TPbank.Position = UDim2.new(0.510704637, 0, 0.304644674, 0)
+TPbank.Size = UDim2.new(0, 183, 0, 52)
+TPbank.Style = Enum.ButtonStyle.RobloxRoundButton
+TPbank.Font = Enum.Font.SourceSans
+TPbank.Text = "TP BANK "
+TPbank.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPbank.TextSize = 18.000
+TPbank.MouseButton1Down:connect(function()
+	local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+	hrp.CFrame = CFrame.new(-240.2, 6.3, 82.4)
+end)
+
+TPbloxinout.Name = "TPbloxinout"
+TPbloxinout.Parent = Main
+TPbloxinout.BackgroundColor3 = Color3.fromRGB(14, 255, 50)
+TPbloxinout.BorderColor3 = Color3.fromRGB(53, 83, 104)
+TPbloxinout.BorderSizePixel = 2
+TPbloxinout.Position = UDim2.new(0.0197485685, 0, 0.304644674, 0)
+TPbloxinout.Size = UDim2.new(0, 183, 0, 52)
+TPbloxinout.Style = Enum.ButtonStyle.RobloxRoundButton
+TPbloxinout.Font = Enum.Font.SourceSans
+TPbloxinout.Text = "BLOX N' OUT (WORK)"
+TPbloxinout.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPbloxinout.TextSize = 18.000
+TPbloxinout.MouseButton1Down:connect(function()
+	local hrp = game.Players.LocalPlayer.Character.HumanoidRootPart
+	hrp.CFrame = CFrame.new(594.5, 5.0, -91.3)
+end)
